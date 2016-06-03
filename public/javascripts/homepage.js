@@ -22,9 +22,13 @@ $(document).ready(function(){
 	});
 	$email.mousedown(function(){
 		$email.removeClass('myemaila');
-		new Clipboard("1023564838@qq.com");
 	});
 	$email.mouseup(function(){
 		$email.addClass('myemaila');
 	});
+	new Clipboard('#email', {
+    		text: function(onclick) {
+        	return '1023564838@qq.com';
+    	}
+	}); 
 });
