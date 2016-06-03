@@ -64,14 +64,15 @@ nav a:active{
 	width: 35px;
 }
 /*图标动画效果环*/
-#ring{
+.ring{
 	position: absolute;
 	display: block;
-	left: 744px;
+	left: 745px;
 	top: 65px;
-	height: 47px;
-	width: 47px;
-	display: none;
+	height: 45px;
+	width: 45px;
+	border: 3px solid #888;
+    border-radius : 50%;
 }
 /*Email*/
 #myemail{
@@ -86,7 +87,7 @@ nav a:active{
 	width: 34px;
 }
 /*email 图标动画*/
-#myemaila{
+.myemaila{
 	box-shadow: 3px 3px 10px #444;
 }
 /*Email*/
@@ -123,6 +124,7 @@ article{
 	float: left;
 	margin: 2px 0 0 0;
 	box-shadow: 5px 1px 20px #777777;
+	border-radius: 2px;
 }
 /*侧栏*/
 aside{
