@@ -15,8 +15,16 @@ $(document).ready(function(){
 	var $qemail=$('#myemail p');
 	$email.mouseover(function(){
 		$(this).addClass('myemaila');
-		$qemail.show();
+		$qemail.css("visibility","visible");
 	}).mouseout(function(){
 		$(this).removeClass('myemaila');
+		$qemail.css("visibility","hidden");
+	});
+	$email.mousedown(function(){
+		$email.removeClass('myemaila');
+		new Clipboard("1023564838@qq.com");
+	});
+	$email.mouseup(function(){
+		$email.addClass('myemaila');
 	});
 });
