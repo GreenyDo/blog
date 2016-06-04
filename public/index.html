@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>GreenyDo's blog</title>
-		<meta http-equiv="Content-type" content="text/html">
+		<meta http-equiv="Content-type" content="text/html" charset="utf-8">
 		<!-- 为了移动设备的支持 viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="libs/bootstrap_3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="stylesheets/home_page.css">
+		<link rel="stylesheet" href="stylesheets/homepage_aside.css">
 	</head>
 	<body>
 		<div class="pagehead">
@@ -38,25 +39,52 @@
 			<div class="boundary"></div>
 			<aside>
 				<h3>推文</h3>
-				<ul>
-					<li>nodejs</li>
-					<li>express建站</li>
-					<li>HTTP</li>
-					<li>javascript对象</li>
-					<li>javascript继承</li>
-					<li>闭包</li>
-					<li>Ajax</li>
-					<li>time-lapse</li>
-					<li>最受期待的手机</li>
-					<li>2016NBA's story</li>
+				<div id="asidetool">
+					<ul id="accordion" class="accordion">
+						<li>
+							<div class="link">Diseño web<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<ul class="submenu">
+								<li><a href="#">Photoshop</a></li>
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">Maquetacion web</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="link">Desarrollo front-end<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<ul class="submenu">
+								<li><a href="#">Javascript</a></li>
+								<li><a href="#">jQuery</a></li>
+								<li><a href="#">Frameworks javascript</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="link">Diseño responsive<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<ul class="submenu">
+								<li><a href="#">Tablets</a></li>
+								<li><a href="#">Dispositivos mobiles</a></li>
+								<li><a href="#">Medios de escritorio</a></li>
+								<li><a href="#">Otros dispositivos</a></li>
+							</ul>
+						</li>
+						<li><div class="link">Posicionami<span class="glyphicon glyphicon-chevron-down"></span></div>
+						<ul class="submenu">
+							<li><a href="#">Google</a></li>
+							<li><a href="#">Bing</a></li>
+							<li><a href="#">Yahoo</a></li>
+							<li><a href="#">Otros buscadores</a></li>
+						</ul>
+					</li>
 				</ul>
-			</aside>
-		</div>
-	<footer>copyright 2016</footer>
-	<script type="text/javascript" src="libs/jquery.js"></script>
-	<script type="text/javascript" src="libs/bootstrap_3.3.5/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="javascripts/homepage.js"></script>
-	<script type="text/javascript" src="libs/clipboard.min.js"></script>
+			</div>
+		</aside>
+	</div>
+<footer>copyright 2016</footer>
+<script type="text/javascript" src="libs/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap_3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="javascripts/homepage.js"></script>
+<script type="text/javascript" src="libs/clipboard.min.js"></script>
+<script type="text/javascript" src="javascripts/homepage_aside.js"></script>
 </body>
 </html>
