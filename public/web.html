@@ -1,47 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 	<head>
-		<title>Talk-NBA</title>
-		<meta http-equiv="Content-type" content="text/html">
+		<title>Web实验室</title>
+		<meta http-equiv="Content-type" content="text/html" charset="utf-8">
 		<!-- 为了移动设备的支持 viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="libs/bootstrap_3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="stylesheets/main_page.css">
+		<link rel="stylesheet" href="">
+		<link rel="shortcut icon" href="greenydo.ico">
 	</head>
-	<body>
-		<div class="pagehead">
-			<P class="logo">GreenyDo</P>
-			<nav>
-			    <a>Web</a>
-				<a>Photo</a>
-				<a>Elect</a>
-				<a>NBA</a>
-				<a>github</a>
-			</nav>
+	<body ng-controller="myCtrl">
+		<div id="head">
+			<nav></nav>
 		</div>
-		<article>
-			<header>
-				标题
-			</header>
-			<p>
-				正文
-			</p>
-		</article>
-		<aside>
-			<ul>
-				<li>nodejs</li>
-				<li>express建站</li>
-				<li>HTTP</li>
-				<li>javascript对象</li>
-				<li>javascript继承</li>
-				<li>闭包</li>
-				<li>Ajax</li>
-				<li>time-lapse</li>
-				<li>最受期待的手机</li>
-				<li>2016NBA's story</li>
-			</ul>
-		</aside>
+		<div id="main">
+			<aside></aside>
+			<div id="content">
+				<div ng-include="'tpls_web/test1.html'" class="test"></div>
+				<div ng-include="'tpls_web/test2.html'" class="test"></div>
+				<div ng-include="'tpls_web/test3.html'" class="test"></div>
+				<div ng-include="'tpls_web/test4.html'" class="test"></div>
+				<div ng-include="'tpls_web/test5.html'" class="test"></div>
+				<div ng-include="'tpls_web/test6.html'" class="test"></div>
+			</div>
+		</div>
 		<footer>copyright 2016</footer>
 		<script type="text/javascript" src="libs/jquery.js"></script>
+		<script type="text/javascript" src="libs/angular.min.js"></script>
+		<script type="text/javascript" src="libs/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="javascripts/web/mainng.js"></script>
 	</body>
 </html>
